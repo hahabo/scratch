@@ -16,9 +16,9 @@ for (1..10) {
     say "in:";
     say qx(cat /tmp/$0.in);
     say "out:perl:";
-    say qx(/usr/bin/time -p perl 100.pl < /tmp/$0.in);
+    say qx(perl 100.pl < /tmp/$0.in);
     say "out:c:";
-    say qx(/usr/bin/time -p ./100-c < /tmp/$0.in);
+    say qx(./100-c < /tmp/$0.in);
     say "out:cc:";
-    say qx(/usr/bin/time -p ./100-cc < /tmp/$0.in);
+    say qx(./100-cc < /tmp/$0.in);
 }
