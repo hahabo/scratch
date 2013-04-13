@@ -14,9 +14,9 @@ for (1..1) {
     my $max = 5;
     qx(echo $max >> /tmp/$0.in);
     for (1..$max) {
-	my $i = int(rand(1_0_000_000));
+	my $i = int(rand(1_000_000_00));
 	++$i if $i == 0;
-	my $j = int(rand(1_0_000_000));
+	my $j = int(rand(1_000_000_00));
 	++$j if $j == 0;
 	($i, $j) = ($j, $i) if $i > $j;
 	qx(echo $i $j >> /tmp/$0.in);
