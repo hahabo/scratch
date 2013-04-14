@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 # This script sets the wallpaper of the lxde desktop
-# by downloading a wallpaper from National Geographic
+# by downloading a wallpaper from NASA APOD
 # website.
 
 use strict;
@@ -18,11 +18,7 @@ sub random_wallpaper {
     return $files[int(rand(@files))];
 }
 
-# # url of the national geography photo of the day
-# my $url =
-#   'http://photography.nationalgeographic.com/photography/photo-of-the-day';
-
-# url of the  Astronomy Picture of the Day 
+# url of the Astronomy Picture of the Day 
 my $url =
     'http://apod.nasa.gov';
 
