@@ -76,7 +76,7 @@ int main ()
   printf ("%d\n", binary_search (99923, 0, max_index));
 #endif
 
-  scanf ("%d", &total_case);
+  result = scanf ("%d", &total_case);
   while ((result = scanf ("%d %d", &m, &n)) != EOF) {
     if (result == 0) break;
     if (m <= 2 && n >= 2) {
