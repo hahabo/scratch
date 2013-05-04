@@ -1,0 +1,6 @@
+! Merge the changes
+! xrdb -merge ~/.Xresources
+
+! Setting xterm default font
+XTerm*faceName: Bitstream Vera Serif Mono
+XTerm*faceSize: 14
