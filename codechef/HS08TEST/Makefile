@@ -1,7 +1,9 @@
+CFLAGS=-Wall -g
+
 all:		HS08TEST-c HS08TEST-cc
 
 # C
-HS08TEST-c:		HS08TEST.c
+HS08TEST-c:	HS08TEST.c
 		gcc $(CFLAGS) HS08TEST.c -o HS08TEST-c
 
 # C++
@@ -18,6 +20,6 @@ try:		HS08TEST-c HS08TEST-cc HS08TEST.pl
 		perl try-HS08TEST.pl
 
 # clean 'em all
-.PHONY:		clean
+.PHONY:	clean
 clean:
 		rm -rf HS08TEST-c HS08TEST-cc HS08TEST.in
