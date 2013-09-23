@@ -4,6 +4,9 @@ use warnings;
 use File::Spec;
 use File::Copy;
 
+# Usage
+# perl init.pl SCRATCH /tmp
+
 die "Project name must!" unless @ARGV > 0;
 die "Initial directory name must!" unless @ARGV > 1;
 
